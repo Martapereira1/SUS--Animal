@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - SUS Animal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cadastro.CSS">
+</head>
+<body>
+    <header>
+        <h1>Contato</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="ajudar.html">Como Ajudar</a></li>
+                <li><a href="cadastro.html" target="_blank">Cadastro</a></li> <!-- Link adicionado -->
+
+            </ul>
+        </nav>
+    </header>
+    <section id="cadastro">
+        <h2>Cadastro</h2>
+        <form id="form-cadastro" onsubmit="return validarFormulario()">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            
+            <input type="submit" value="Cadastrar">
+        </form>
+    </section>
+
+    <script src="ca.js"></script>
+</body>
+</html>
